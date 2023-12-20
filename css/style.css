@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 h3 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+.header__title {
+    color: black;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.header__logo__img {
+    width: 10rem;
+    height: 10rem;
+}
+
+body {
+    background-color: white;
+}
+
+p {
+    color: black;
+}
+
+.precentation {
+    background-image: url(../imagenes/maki-sushi.jpg);
+    height: 50rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.title__maki {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #D65A31;
+    margin-bottom: 35rem;
+}
+
+
+button {
+    width: 10rem;
+    height: 4.5rem;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #393E46;
+    color: #D65A31;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2rem;
+
+}
+
+button:hover {
+    background-color: #222831;
+}
+
+button:active {
+    background-color: #F6F1EE;
+}
+
+
+.title__gif {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+}
+
+.index__gif{
+    width: 100%;
+}
+
+.food {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.food__img {
+    width: 23rem;
+}
+
+.lounge__img {
+    width: 23rem;
+}
+
+
+.title__enjoy {
+    text-align: center;
+    font-size: 3rem;
+    color: #D65A31;
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #D65A31;
+}
+
+
+.proposal {
+    display: flex;
+    align-items: center;
+    margin: 2rem
+}
+
+.proposal__title {
+    font-size: 3rem;
+    color: #D65A31;
+}
+
+.proposal__paragraph {
+    font-size: 2rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .precentation {
+        width: auto;
+        height: auto;
+
+    }
+
+    .title__maki {
+        font-size: 2rem;
+    }
+
+
+    .title__enjoy {
+        font-size: 1.5rem;
+    }
+
+    .paragraph {
+        font-size: 1rem;
+    }
+
+
+    .title__gif {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .proposal {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .proposal__title {
+        font-size: 2rem;
+    }
+
+    .proposal__paragraph {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 365px) {
+    .precentation {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .proposal {
+        margin: 1rem;
+    }
+
+    .proposal__title {
+        font-size: 1.5rem;
+    }
+
+    .proposal__paragraph {
+        font-size: 1rem;
+    }
+
+
+
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #D65A31;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer .copy {
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+footer .redes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+footer .redes a {
+    padding: 5px;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Media query para pantallas pequeñas (teléfonos) */
+@media only screen and (max-width: 768px) {
+    footer {
+        font-size: 14px;
+    }
+
+    .redes {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .redes a {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+
+@media only screen and (min-width: 320px) {
+    footer {
+        font-size: 16px;
+    }
+}
+
+
+
+
+/*css de carta*/
+
+.main__letter {
+    padding: 3rem;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 15rem);
+    gap: 30px;
+    grid-template-areas:
+        "icon__makis makis img1 img2 img3"
+        "icon__sashimi img4 img5 img6"
+        "icon__ramen img7 img8 img9";
+
+}
+
+.icon__letter {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.grid__card {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.grid__card :hover {
+    box-shadow: 0 8px 12px rgba(198, 129, 73, 0.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+/*css experiencia*/
+
+.experience__title{
+    text-align: center;
+    color: #D65A31;
+    font-size: 4rem;
+}
+
+.precentation__experience {
+    background-image: url("../imagenes/placer-inesperado-experiencia.jpg");
+    height: 50rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.subtitle__precentation__experience {
+    font-size: 2rem;
+    text-align: left;
+
+}
+
+.experience__paragraph {
+    font-size: 1.5rem;
+    color: #F6F1EE;
+    text-align: right;
+    margin-right: 1.5rem;
+
+}
+
+.experience__container__gif {
+    display: flex;
+    align-items: center;
+    margin: 3rem;
+}
+
+.container__restaurant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.containar__restaurant__lounge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.experience__info__title {
+    font-size: 3.5rem;
+}
+
+.experience__info__paragraph {
+    font-size: 2rem;
+}
+
+.experience__info__img {
+    width: 35rem;
+}
+
+.experience__restaurant__img {
+    width: 35rem;
+}
+
+.experience__restaurant__title {
+    font-size: 3.5rem;
+}
+
+.experience__restaurant__paragraph {
+    font-size: 2rem;
+}
+
+.experience__restaurant__pdf {
+    text-decoration: none;
+    font-size: 4rem;
+    color: #D65A31;
+}
+
+@media (max-width:768px) {
+
+    .precentation__experience {
+        width: auto;
+        height: 30rem;
+    }
+
+    .subtitle__precentation__experience {
+        font-size: 1.5rem;
+    }
+
+    .experience__paragraph {
+        font-size: 1rem;
+    }
+
+    .experience__paragraph {
+        font-size: 1.5rem;
+    }
+
+    .experience__info__title {
+        font-size: 2rem;
+    }
+
+    .experience__info__paragraph {
+        font-size: 1.5rem;
+    }
+
+    .experience__restaurant__title {
+        font-size: 2rem;
+    }
+
+    .experience__container__gif {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .experience__restaurant__img {
+        width: 25rem;
+    }
+
+    .experience__restaurant__paragraph {
+        font-size: 1.5rem;
+        margin: 2rem;
+    }
+
+    .container__restaurant {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+
+    .containar__restaurant__lounge {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .experience__info__img {
+        width: 20rem;
+    }
+
+}
+
+@media (max-width:320px) {
+
+    .precentation__experience{
+        width: 22rem;
+        height: auto;
+    }
+
+    .subtitle__precentation__experience {
+        font-size: 1.5rem;
+    }
+
+    .experience__paragraph {
+        font-size: 1rem;
+    }
+
+    .experience__info__title {
+        font-size: 1.5rem;
+    }
+
+    .experience__info__paragraph {
+        font-size: 1rem;
+    }
+
+    .experience__restaurant__title {
+        font-size: 1.5rem;
+    }
+
+    .experience__restaurant__paragraph {
+        font-size: 1rem;
+    }
+
+    .experience__restaurant__pdf {
+        font-size: 1rem;
+    }
+
+    .precentation__experience {
+        width: 24rem;
+        height: auto;
+    }
+
+    .experience__container__gif {
+        display: flex;
+        justify-content: center;
+    }
+
+    .experience__restaurant__img {
+        width: 15rem;
+    }
+
+}
+
+
+
+/*restaurante*/
+
+.restaurant {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.restaurant__title {
+    font-size: 4rem;
+    color: #D65A31;
+}
+
+.restaurant__paragraph {
+    font-size: 2.5rem;
+    margin: 3rem;
+}
+
+.restaurant__img {
+    width: 70rem;
+}
+
+.restaurant__map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    flex-wrap: wrap;
+
+}
+
+.restaurant__map__box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+.restaurant__map__title {
+    font-size: 6rem;
+
+
+}
+
+.restaurant__map_paragraph {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .restaurant__title {
+        font-size: 3rem;
+    }
+
+    .restaurant__paragraph {
+        font-size: 2rem;
+
+    }
+
+    .restaurant__img {
+        width: 45rem;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .restaurant__title {
+        font-size: 1.5rem;
+    }
+
+    .restaurant__paragraph {
+        font-size: 1rem;
+
+    }
+
+    .restaurant__img {
+        width: 20rem;
+    }
+
+    .restaurant__map__title {
+        font-size: 3rem;
+    }
+}
+
+
+
+/*blog*/
+
+.blog__title{
+    text-align: center;
+    color: #D65A31;
+    font-size: 4rem;
+}
+
+.main {
+    padding: 3rem;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 15rem);
+    gap: 30px;
+    grid-template-areas:
+        "area1 area2 area2"
+        "area1 area5 area6"
+        "area1 area5 area9";
+
+}
+
+
+
+.text__blog {
+    text-align: center;
+}
+
+#area1 {
+    grid-area: area1;
+}
+
+#area2 {
+    grid-area: area2;
+}
+
+#area5 {
+    grid-area: area5;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.text__area {
+    position: absolute;
+}
+
+#area6 {
+    grid-area: area6;
+}
+
+/*movile de blog*/
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tablets) */
+@media (max-width: 768px) {
+
+    .main {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 20em);
+        gap: 65px;
+        grid-template-areas:
+            "area1  area5"
+            "area1  area6"
+            "area1  area9"
+            "area2  area2";
+    }
+
+    /* Estilos para dispositivos con un ancho máximo de 480px (teléfonos) */
+    @media (max-width: 480px) {
+        .main {
+            padding: 4rem;
+            margin: 10px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 12rem);
+            gap: 50px;
+            grid-template-areas:
+                "area1"
+                "area1"
+                "area2"
+                "area5"
+                "area6"
+                "area9";
+        }
+
+    }
+}
+
+/*movile de carta*/
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tablets) */
+@media (max-width: 768px) {
+
+    .main__letter {
+        padding: 3rem;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(15, 15rem);
+        gap: 50px;
+        grid-template-areas:
+            "icon__makis"
+            "makis"
+            "img1"
+            "img2"
+            "img3"
+            "icon__sashimi"
+            "sashimi"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "img9"
+
+    }
+
+    /* Estilos para dispositivos con un ancho máximo de 480px (teléfonos) */
+    @media (max-width: 480px) {
+        .main__leter {
+            padding: 3rem;
+            margin: 5px;
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            grid-template-rows: repeat(15, 15rem);
+            gap: 50px;
+            grid-template-areas:
+                "icon__makis makis"
+                "makis  "
+                "img1"
+                "img2"
+                "img3"
+                "icon__sashimi"
+                "sashimi"
+                "img4"
+                "img5"
+                "img6"
+                "img7"
+                "img9"
+
+        }
+
+    }
+}
