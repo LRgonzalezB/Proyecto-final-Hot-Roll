@@ -48,7 +48,7 @@ p {
 }
 
 .precentation {
-    background-image: url(../imagenes/maki-sushi.jpg);
+    background-image: url(../imagenes/maki-sushi.webp);
     height: 50rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -283,6 +283,7 @@ footer {
 /*css de carta*/
 
 .main__letter {
+    text-align: center;
     padding: 3rem;
     margin: 5px;
     display: grid;
@@ -294,6 +295,10 @@ footer {
         "icon__sashimi img4 img5 img6"
         "icon__ramen img7 img8 img9";
 
+}
+
+.title__main__letter{
+    font-size: 4rem;
 }
 
 .icon__letter {
@@ -362,7 +367,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    margin: 3rem;
 }
 
 .experience__info__title {
@@ -387,6 +392,7 @@ footer {
 
 .experience__restaurant__paragraph {
     font-size: 2rem;
+
 }
 
 .experience__restaurant__pdf {
@@ -684,7 +690,7 @@ footer {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(6, 12rem);
-            gap: 50px;
+
             grid-template-areas:
                 "area1"
                 "area1"
@@ -708,7 +714,6 @@ footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(15, 15rem);
-        gap: 50px;
         grid-template-areas:
             "icon__makis"
             "makis"
@@ -733,7 +738,6 @@ footer {
             display: grid;
             grid-template-columns: repeat(2, 2fr);
             grid-template-rows: repeat(15, 15rem);
-            gap: 50px;
             grid-template-areas:
                 "icon__makis makis"
                 "makis  "
