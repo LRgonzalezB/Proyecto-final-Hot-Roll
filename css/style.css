@@ -13,12 +13,7 @@ p {
     font-weight: 400;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem;
-}
+
 
 .header__title {
     color: black;
@@ -38,6 +33,14 @@ header {
     width: 10rem;
     height: 10rem;
 }
+
+header > nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 
 body {
     background-color: white;
@@ -354,7 +357,7 @@ footer {
 .subtitle__precentation__experience {
     font-size: 2rem;
     text-align: left;
-
+    color: #D65A31;
 }
 
 .experience__paragraph {
